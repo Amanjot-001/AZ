@@ -1,0 +1,6 @@
+export { default as DashIcon } from './dashboard.png'
+export { default as BulbIcon } from './lightbulb.png'
+export { default as GroupIcon } from './usergroup.png'
+export { default as ClipboardIcon } from './clipboard.png'
+export { default as ContestIcon } from './chart.png'
+export { default as StarIcon } from './star.png'

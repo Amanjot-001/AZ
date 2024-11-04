@@ -1,8 +1,11 @@
-import { Header } from "./components/sections"
+import { Header, Sidebar } from "./components/sections"
 
 function App() {
 	return (
-		<Header />
+		<>
+			<Header />
+			<Sidebar />
+		</>
 	)
 }
 

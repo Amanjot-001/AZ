@@ -12,7 +12,7 @@ const sidebarItems: SidebarItem[] = [
 	{ name: "DashBoard", logo: DashIcon, path: "/dashboard", isActive: false },
 	{ name: "Learn", logo: BulbIcon, path: "/learn", isActive: false },
 	{ name: "Forums", logo: GroupIcon, path: "/forums", isActive: false },
-	{ name: "Upskill", logo: ClipboardIcon, path: "/upskill", isActive: false },
+	{ name: "Upskill", logo: ClipboardIcon, path: "/upskill", isActive: true },
 	{ name: "Contest", logo: ContestIcon, path: "/contest", isActive: false },
 	{ name: "Leaderboard", logo: StarIcon, path: "/leaderboard", isActive: false },
 ];

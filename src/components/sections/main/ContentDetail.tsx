@@ -1,6 +1,9 @@
 import React from 'react';
 import { Chapter, Resource } from './types.ts';
 import ResourceList from './ResourceList.tsx';
+import ClockIcon from '../../../assets/clock.png'
+import { ContestIcon } from '../../../assets/sidebar-icons/index.ts';
+import { ArrowDownIcon, ArrowUpIcon } from '../../../assets/chapters-icons/index.ts';
 
 interface ContentDetailsProps {
 	chapter: Chapter;
@@ -9,9 +12,23 @@ interface ContentDetailsProps {
 const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 	const parts = [
 		{
-			title: "Part 1: Lorem Ipsum Dolor Sit Amet",
+			id: 1,
+			title: "Lorem Ipsum Dolor Sit Amet",
 			duration: "02:00:00",
 			difficulty: "Medium",
+			completed: "45",
+			resources: [
+				{ id: 1, type: "Video", title: "Video 1", duration: "10:00" },
+				{ id: 2, type: "Article", title: "Article 1", duration: "10:00" },
+				{ id: 3, type: "Quiz", title: "Quiz 1", duration: "10:00" },
+			],
+		},
+		{
+			id: 2,
+			title: "Lorem Ipsum Dolor Sit Amet",
+			duration: "02:00:00",
+			difficulty: "Medium",
+			completed: "45",
 			resources: [
 				{ id: 1, type: "Video", title: "Video 1", duration: "10:00" },
 				{ id: 2, type: "Article", title: "Article 1", duration: "10:00" },
@@ -23,10 +40,37 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 	return (
 		<div className="w-3/4 p-4">
 			{parts.map((part, index) => (
-				<div key={index} className="mb-6">
-					<h2 className="text-xl font-semibold mb-2">{part.title}</h2>
-					<div className="text-gray-500 mb-2">
-						{part.duration} | {part.difficulty}
+				<div>
+					<div key={index} className="flex justify-between">
+						<div className='flex flex-col'>
+							<h2 className='font-normal text-[#17384D]'>PART {part.id}</h2>
+							<h2 className="text-lg font-semibold">{part.title}</h2>
+						</div>
+						<div className="flex items-center gap-2">
+							<span className="flex items-center gap-2 text-sm text-[#17384D]">
+								<img src={ClockIcon} alt="time" className="w-4 h-4 text-[#17384D] fill-current" />
+								{part.duration}
+							</span>
+							<span className="flex items-center gap-2 text-sm text-[#17384D]">
+								<img src={ContestIcon} alt="time" className="w-4 h-4 text-[#17384D] fill-current" />
+								{part.difficulty}
+							</span>
+							<span className="flex items-center gap-2 text-sm text-[#17384D]">
+								<img src={ContestIcon} alt="time" className="w-4 h-4 text-[#17384D] fill-current" />
+								{part.resources.length}
+							</span>
+							<span>
+								<img src={ArrowUpIcon} alt="time" className="w-4 h-4 text-[#17384D] fill-current" />
+							</span>
+						</div>
+					</div>
+					<div className='flex justify-end items-center'>
+						<span className='font-normal text-black text-xs w-max p-1 rounded-md bg-[#EFF5FF] border border-[#99E4FF]'>
+							{part.completed}% Completed
+						</span>
+					</div>
+					<div>
+						
 					</div>
 					<ResourceList resources={part.resources} />
 				</div>

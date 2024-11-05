@@ -3,7 +3,7 @@ import { BellIcon, Logo, MenuIcon } from "../../../assets/header-icons";
 
 const Header: React.FC = () => {
 	return (
-		<header className="flex items-center justify-between">
+		<header className="flex items-center justify-between px-3">
 			<div className="flex items-center">
 				<img src={MenuIcon} alt="menu" className="mr-6 w-8 h-8" />
 				<img src={Logo} alt="AlgoZenith" />

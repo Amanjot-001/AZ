@@ -38,10 +38,10 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 	];
 
 	return (
-		<div className="w-3/4 p-4">
+		<div className="flex flex-col w-3/4 gap-4">
 			{parts.map((part, index) => (
-				<div>
-					<div key={index} className="flex justify-between">
+				<div className='border border-box border-[#A4E6FF] shadow-[0px_3.67px_3.67px_rgba(41,83,155,0.3)] rounded-lg'>
+					<div key={index} className="flex justify-between p-4">
 						<div className='flex flex-col'>
 							<h2 className='font-normal text-[#17384D]'>PART {part.id}</h2>
 							<h2 className="text-lg font-semibold">{part.title}</h2>
@@ -64,7 +64,7 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 							</span>
 						</div>
 					</div>
-					<div className='flex justify-end items-center mb-2'>
+					<div className='flex justify-end items-center mb-2 px-4'>
 						<span className='font-normal text-black text-xs w-max p-1 rounded-md bg-[#EFF5FF] border border-[#99E4FF]'>
 							{part.completed}% Completed
 						</span>

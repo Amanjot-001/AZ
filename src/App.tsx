@@ -1,4 +1,4 @@
-import { Header, Sidebar } from "./components/sections";
+import { Header, Sidebar, Main } from "./components/sections";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -10,14 +10,12 @@ function App() {
 				<Sidebar />
 				<main className="p-4 w-full bg-secondary_bg">
 					<Routes>
-						<Route path="/" element={<Home />} />
+						<Route path="/" element={<Main />} />
 					</Routes>
 				</main>
 			</div>
 		</div>
 	);
 }
-
-const Home = () => <div>Home Page</div>;
 
 export default App;

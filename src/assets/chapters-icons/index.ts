@@ -1,2 +1,6 @@
 export {default as ArrowUpIcon } from './arrowUp.svg'
 export {default as ArrowDownIcon } from './arrowDown.svg'
+export {default as CodeIcon } from './code.svg'
+export {default as CopyIcon } from './copy.svg'
+export {default as PlayIcon } from './play.svg'
+export {default as QuestionIcon } from './question.svg'

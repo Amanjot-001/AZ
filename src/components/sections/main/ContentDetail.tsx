@@ -38,7 +38,7 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 	];
 
 	return (
-		<div className="flex flex-col w-3/4 gap-4">
+		<div className="flex flex-col w-full gap-4">
 			{parts.map((part, index) => (
 				<div className='border border-box border-[#A4E6FF] shadow-[0px_3.67px_3.67px_rgba(41,83,155,0.3)] rounded-lg'>
 					<div key={index} className="flex justify-between p-4">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Chapter } from './types.ts';
+import ClockIcon from '../../../assets/clock.png'
 
 interface ChapterListProps {
 	chapters: Chapter[];
@@ -9,16 +10,22 @@ interface ChapterListProps {
 
 const ChapterList: React.FC<ChapterListProps> = ({ chapters, selectedChapter, onSelectChapter }) => {
 	return (
-		<div className="w-1/4 p-4 bg-gray-100 border-r">
+		<div className="flex flex-col w-1/5">
 			{chapters.map((chapter) => (
-				<div
-					key={chapter.id}
-					onClick={() => onSelectChapter(chapter)}
-					className={`p-2 cursor-pointer ${selectedChapter?.id === chapter.id ? 'bg-blue-100' : ''
-						}`}
-				>
-					{chapter.title} <span className="text-sm text-gray-500">{chapter.duration}</span>
-				</div>
+				<React.Fragment key={chapter.id}>
+					<div
+						onClick={() => onSelectChapter(chapter)}
+						className={`flex justify-between items-center px-2 py-3 cursor-pointer rounded-md ${selectedChapter?.id === chapter.id ? 'bg-[#EFF5FF] font-medium' : ''
+							}`}
+					>
+						{chapter.title}
+						<span className="flex items-center gap-2 text-sm text-[#608AD2]">
+							<img src={ClockIcon} alt="time" className="w-4 h-4" />
+							{chapter.duration}
+						</span>
+					</div>
+					<div className="h-px bg-gradient-to-r from-white via-[#A4E6FF] to-white"></div>
+				</React.Fragment>
 			))}
 		</div>
 	);

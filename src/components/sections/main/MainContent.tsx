@@ -15,7 +15,7 @@ const MainContent: React.FC = () => {
 	return (
 		<div className="flex flex-col">
 			<Nav />
-			<div className="flex">
+			<div className="flex gap-6 mt-8">
 				<ChapterList
 					chapters={chapters}
 					selectedChapter={selectedChapter}

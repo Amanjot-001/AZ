@@ -16,7 +16,7 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 			title: "Lorem Ipsum Dolor Sit Amet",
 			duration: "02:00:00",
 			difficulty: "Medium",
-			completed: "45",
+			completed: 45,
 			resources: [
 				{ id: 1, type: "Video", title: "Video 1", duration: "10:00" },
 				{ id: 2, type: "Article", title: "Article 1", duration: "10:00" },
@@ -28,7 +28,7 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 			title: "Lorem Ipsum Dolor Sit Amet",
 			duration: "02:00:00",
 			difficulty: "Medium",
-			completed: "45",
+			completed: 30,
 			resources: [
 				{ id: 1, type: "Video", title: "Video 1", duration: "10:00" },
 				{ id: 2, type: "Article", title: "Article 1", duration: "10:00" },
@@ -64,13 +64,16 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 							</span>
 						</div>
 					</div>
-					<div className='flex justify-end items-center'>
+					<div className='flex justify-end items-center mb-2'>
 						<span className='font-normal text-black text-xs w-max p-1 rounded-md bg-[#EFF5FF] border border-[#99E4FF]'>
 							{part.completed}% Completed
 						</span>
 					</div>
-					<div>
-						
+					<div className="w-full bg-[#EFF5FF] rounded-b-2xl h-2">
+						<div
+							className="h-full bg-[#172B4DD9] rounded-bl-2xl"
+							style={{ width: `${part.completed}%` }}
+						></div>
 					</div>
 					<ResourceList resources={part.resources} />
 				</div>

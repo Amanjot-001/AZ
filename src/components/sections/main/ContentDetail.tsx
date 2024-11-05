@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chapter, Resource } from './types.ts';
 import ResourceList from './ResourceList.tsx';
-import ClockIcon from '../../../assets/clock.png'
+import ClockIcon from '../../../assets/chapters-icons/clock.svg'
 import { ContestIcon } from '../../../assets/sidebar-icons/index.ts';
 import { ArrowDownIcon, ArrowUpIcon } from '../../../assets/chapters-icons/index.ts';
 

@@ -1,4 +1,4 @@
-import { Header, Sidebar, Main } from "./components/sections";
+import { Header, Sidebar, MainContent } from "./components/sections";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 				<Sidebar />
 				<main className="p-4 w-full bg-secondary_bg">
 					<Routes>
-						<Route path="/" element={<Main />} />
+						<Route path="/" element={<MainContent />} />
 					</Routes>
 				</main>
 			</div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 
-const Main: React.FC = () => {
+const MainContent: React.FC = () => {
 	return (
 		<div>
 			<Nav />
@@ -9,4 +9,4 @@ const Main: React.FC = () => {
 	)
 }
 
-export default Main;
+export default MainContent;

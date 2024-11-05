@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
 	return (
-		<div className="flex flex-col min-h-screen bg-primary-gradient">
+		<div className="flex flex-col min-h-screen bg-primary-gradient p-14">
 			<Header />
 
 			<div className="flex">

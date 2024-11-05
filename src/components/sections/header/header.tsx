@@ -1,18 +1,19 @@
 import React from "react";
-import { BellIcon, MenuIcon } from "../../../assets/header-icons";
+import { BellIcon, Logo, MenuIcon } from "../../../assets/header-icons";
 
 const Header: React.FC = () => {
 	return (
-		<header className="flex items-center justify-between p-4 bg-white shadow-md">
+		<header className="flex items-center justify-between">
 			<div className="flex items-center">
-				<img src={MenuIcon} alt="menu" className="mr-2 w-6 h-6" />
-				<span className="text-xl font-bold text-gray-800">AlgoZenith</span>
+				<img src={MenuIcon} alt="menu" className="mr-6 w-8 h-8" />
+				<img src={Logo} alt="AlgoZenith" />
 			</div>
 
 			<div className="flex items-center">
-				<img src={BellIcon} alt="notification" className="mr-4 w-6 h-6 cursor-pointer" />
-				<div className="w-9 h-9 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center">
-					<span className="text-gray-600">P</span>
+				<div className="px-4 py-3 bg-[#E7F8FF] rounded-md">
+					<img src={BellIcon} alt="notification" className="w-5 h-6 cursor-pointer" />
+				</div>
+				<div className="w-16 h-16 ml-6 rounded-full bg-[#D9D9D9] cursor-pointer">
 				</div>
 			</div>
 		</header>

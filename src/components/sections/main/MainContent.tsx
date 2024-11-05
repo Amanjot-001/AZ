@@ -13,7 +13,7 @@ const MainContent: React.FC = () => {
 	const [selectedChapter, setSelectedChapter] = useState<Chapter | null>(chapters[0]);
 
 	return (
-		<div>
+		<div className="flex flex-col">
 			<Nav />
 			<div className="flex">
 				<ChapterList

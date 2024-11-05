@@ -8,7 +8,7 @@ function App() {
 
 			<div className="flex">
 				<Sidebar />
-				<main className="p-4 w-full bg-secondary_bg">
+				<main className="p-8 mt-8 w-full bg-secondary_bg rounded-xl border border-[#A4E6FF]">
 					<Routes>
 						<Route path="/" element={<MainContent />} />
 					</Routes>

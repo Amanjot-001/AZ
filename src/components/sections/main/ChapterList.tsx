@@ -1,6 +1,6 @@
 import React from 'react';
 import { Chapter } from './types.ts';
-import ClockIcon from '../../../assets/clock.png'
+import ClockIcon from '../../../assets/chapters-icons/clock.svg'
 
 interface ChapterListProps {
 	chapters: Chapter[];
@@ -20,7 +20,7 @@ const ChapterList: React.FC<ChapterListProps> = ({ chapters, selectedChapter, on
 					>
 						{chapter.title}
 						<span className="flex items-center gap-2 text-sm text-[#608AD2]">
-							<img src={ClockIcon} alt="time" className="w-4 h-4" />
+							<img src={ClockIcon} alt="time" className="w-4 h-4 text-[#608AD2] stroke-[#608AD2]" />
 							{chapter.duration}
 						</span>
 					</div>

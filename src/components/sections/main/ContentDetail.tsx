@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Chapter, Resource } from './types.ts';
 import ResourceList from './ResourceList.tsx';
 import ClockIcon from '../../../assets/chapters-icons/clock.svg'
@@ -37,6 +37,14 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 		},
 	];
 
+	const [expandedParts, setExpandedParts] = useState<number[]>([]);
+
+	const togglePart = (id: number) => {
+		setExpandedParts(prev =>
+			prev.includes(id) ? prev.filter(partId => partId !== id) : [...prev, id]
+		);
+	};
+
 	return (
 		<div className="flex flex-col w-full gap-4">
 			{parts.map((part, index) => (
@@ -59,8 +67,12 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 								<img src={ContestIcon} alt="time" className="w-4 h-4 text-[#17384D] fill-current" />
 								{part.resources.length}
 							</span>
-							<span>
-								<img src={ArrowUpIcon} alt="time" className="w-4 h-4 text-[#17384D] fill-current" />
+							<span onClick={() => togglePart(part.id)} className="cursor-pointer">
+								<img
+									src={expandedParts.includes(part.id) ? ArrowUpIcon : ArrowDownIcon}
+									alt="toggle"
+									className="w-4 h-4"
+								/>
 							</span>
 						</div>
 					</div>
@@ -75,7 +87,9 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 							style={{ width: `${part.completed}%` }}
 						></div>
 					</div>
-					<ResourceList resources={part.resources} />
+					{expandedParts.includes(part.id) && (
+						<ResourceList resources={part.resources} />
+					)}
 				</div>
 			))}
 		</div>

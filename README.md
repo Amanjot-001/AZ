@@ -12,6 +12,8 @@
 - **Resource List**: Each chapter has resources that can be expanded and collapsed with a smooth toggle feature.
 - **Progress Bar**: Each chapter part shows a progress bar indicating completion percentage.
 - **Chapter Details**: Click on a chapter to see detailed information and resources for that chapter, with icons representing different attributes like time and difficulty.
+- **Mock Data**: Simulated data used for chapters and resources, mimicking the behavior of a real API.
+- **API Calls**: API-like functionality is implemented to fetch the mock data and handle state updates dynamically.
 
 ## Steps to Run Locally
 

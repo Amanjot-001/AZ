@@ -12,6 +12,9 @@ export default {
 			},
 			colors: {
 				secondary_bg: "#FFFFFF",
+				light_bg: "#EFF5FF",
+				primary_font: "#17384D",
+				primary_border: "#A4E6FF",
 			},
 			fontFamily: {
 				'dm-sans': ['"DM Sans"', 'sans-serif'],

@@ -8,7 +8,7 @@ function App() {
 
 			<div className="flex justify-center gap-8">
 				<Sidebar />
-				<main className="p-8 mt-8 w-full bg-secondary_bg rounded-xl border border-[#A4E6FF]">
+				<main className="p-8 mt-8 w-full bg-secondary_bg rounded-xl border border-primary_border">
 					<AppRoutes />
 				</main>
 			</div>

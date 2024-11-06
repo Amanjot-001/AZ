@@ -22,8 +22,8 @@ const ResourceList: React.FC<ResourceListProps> = ({ resources }) => {
 								<p className='font-bold text-black'>{resource.title}</p>
 							</span>
 							<span className="flex items-center gap-2">
-								<img src={ClockIcon} alt="icon" className='w-5 h-5 text-[#17384D] fill-[#17384D]' />
-								<p className='font-normal text-[#17384D]'>{resource.duration}</p>
+								<img src={ClockIcon} alt="icon" className='w-5 h-5 text-primary_font fill-primary_font' />
+								<p className='font-normal text-primary_font'>{resource.duration}</p>
 							</span>
 						</div>
 						<div className="h-px bg-[linear-gradient(90deg,_rgba(23,_43,_77,_0)_0%,_#172B4D_49.54%,_rgba(5,_68,_94,_0)_100%)]"></div>

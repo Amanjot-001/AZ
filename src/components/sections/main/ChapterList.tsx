@@ -9,7 +9,7 @@ const ChapterList: React.FC<ChapterListProps> = ({ chapters, selectedChapter, on
 				<React.Fragment key={chapter.id}>
 					<div
 						onClick={() => onSelectChapter(chapter)}
-						className={`flex justify-between items-center font-dm-sans px-2 py-3 cursor-pointer rounded-md ${selectedChapter?.id === chapter.id ? 'bg-[#EFF5FF] font-bold' : ''
+						className={`flex justify-between items-center font-dm-sans px-2 py-3 cursor-pointer rounded-md ${selectedChapter?.id === chapter.id ? 'bg-light_bg font-bold' : ''
 							}`}
 					>
 						{chapter.title}
@@ -18,7 +18,7 @@ const ChapterList: React.FC<ChapterListProps> = ({ chapters, selectedChapter, on
 							{chapter.duration}
 						</span>
 					</div>
-					<div className="h-px bg-gradient-to-r from-white via-[#A4E6FF] to-white"></div>
+					<div className="h-px bg-gradient-to-r from-white via-primary_border to-white"></div>
 				</React.Fragment>
 			))}
 		</div>

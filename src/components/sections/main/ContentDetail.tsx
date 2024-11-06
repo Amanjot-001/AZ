@@ -1,42 +1,11 @@
 import React, { useState } from 'react';
-import { Chapter, Resource } from './types.ts';
 import ResourceList from './ResourceList.tsx';
 import ClockIcon from '../../../assets/chapters-icons/clock.svg'
 import { ContestIcon } from '../../../assets/sidebar-icons/index.ts';
 import { ArrowDownIcon, ArrowUpIcon } from '../../../assets/chapters-icons/index.ts';
+import { chapters } from '../../../mock/chapterData.ts';
 
-interface ContentDetailsProps {
-	chapter: Chapter;
-}
-
-const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
-	const parts = [
-		{
-			id: 1,
-			title: "Lorem Ipsum Dolor Sit Amet",
-			duration: "02:00:00",
-			difficulty: "Medium",
-			completed: 45,
-			resources: [
-				{ id: 1, type: "Video", title: "Video 1", duration: "10:00" },
-				{ id: 2, type: "Article", title: "Article 1", duration: "10:00" },
-				{ id: 3, type: "Quiz", title: "Quiz 1", duration: "10:00" },
-			],
-		},
-		{
-			id: 2,
-			title: "Lorem Ipsum Dolor Sit Amet",
-			duration: "02:00:00",
-			difficulty: "Medium",
-			completed: 30,
-			resources: [
-				{ id: 1, type: "Video", title: "Video 1", duration: "10:00" },
-				{ id: 2, type: "Article", title: "Article 1", duration: "10:00" },
-				{ id: 3, type: "Quiz", title: "Quiz 1", duration: "10:00" },
-			],
-		},
-	];
-
+const ContentDetails: React.FC = () => {
 	const [expandedParts, setExpandedParts] = useState<number[]>([]);
 
 	const togglePart = (id: number) => {
@@ -47,7 +16,7 @@ const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
 
 	return (
 		<div className="flex flex-col w-full gap-4">
-			{parts.map((part, index) => (
+			{chapters.map((part, index) => (
 				<div className='border border-box border-[#A4E6FF] shadow-[0px_3.67px_3.67px_rgba(41,83,155,0.3)] rounded-lg'>
 					<div key={index} className="flex justify-between p-4">
 						<div className='flex flex-col'>

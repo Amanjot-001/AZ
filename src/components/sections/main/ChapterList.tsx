@@ -1,12 +1,6 @@
 import React from 'react';
-import { Chapter } from './types.ts';
 import ClockIcon from '../../../assets/chapters-icons/clock.svg'
-
-interface ChapterListProps {
-	chapters: Chapter[];
-	selectedChapter: Chapter | null;
-	onSelectChapter: (chapter: Chapter) => void;
-}
+import { ChapterListProps } from './types.ts';
 
 const ChapterList: React.FC<ChapterListProps> = ({ chapters, selectedChapter, onSelectChapter }) => {
 	return (

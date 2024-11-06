@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ResourceList from './ResourceList.tsx';
 import ClockIcon from '../../../assets/chapters-icons/clock.svg'
 import { ContestIcon } from '../../../assets/sidebar-icons/index.ts';
 import { ArrowDownIcon, ArrowUpIcon } from '../../../assets/chapters-icons/index.ts';
-import { chapters } from '../../../mock/chapterData.ts';
+import { fetchChapters } from '../../../services/chapterService.ts';
+import { Chapter } from './types.ts';
 
 const ContentDetails: React.FC = () => {
 	const [expandedParts, setExpandedParts] = useState<number[]>([]);
+	const [chapters, setChapters] = useState<Chapter[]>([]);
+
+	useEffect(() => {
+		const getChapters = async () => {
+			const data = await fetchChapters();
+			setChapters(data);
+		};
+		getChapters();
+	}, []);
 
 	const togglePart = (id: number) => {
 		setExpandedParts(prev =>

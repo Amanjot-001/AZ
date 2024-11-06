@@ -1,20 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ResourceList from './ResourceList.tsx';
 import { ArrowDownIcon, ArrowUpIcon, ClockIcon, CopyIcon, ContestIcon } from '../../../assets/chapters-icons/index.ts';
-import { fetchChapters } from '../../../services/chapterService.ts';
-import { Chapter } from './types.ts';
+import { Chapter, Part } from './types.ts';
 
-const ContentDetails: React.FC = () => {
-	const [expandedParts, setExpandedParts] = useState<number[]>([]);
-	const [chapters, setChapters] = useState<Chapter[]>([]);
+interface ContentDetailsProps {
+	chapter: Chapter;
+}
 
-	useEffect(() => {
-		const getChapters = async () => {
-			const data = await fetchChapters();
-			setChapters(data);
-		};
-		getChapters();
-	}, []);
+
+const ContentDetails: React.FC<ContentDetailsProps> = ({ chapter }) => {
+	const [expandedParts, setExpandedParts] = useState<number[]>([1]);
 
 	const togglePart = (id: number) => {
 		setExpandedParts(prev =>
@@ -24,9 +19,9 @@ const ContentDetails: React.FC = () => {
 
 	return (
 		<div className="flex flex-col w-full gap-4">
-			{chapters.map((part, index) => (
-				<div className='border border-box border-[#A4E6FF] shadow-[0px_3.67px_3.67px_rgba(41,83,155,0.3)] rounded-lg'>
-					<div key={index} className="flex justify-between p-4 font-dm-sans">
+			{chapter.parts.map((part: Part) => (
+				<div key={part.id} className='border border-box border-[#A4E6FF] shadow-[0px_3.67px_3.67px_rgba(41,83,155,0.3)] rounded-lg'>
+					<div className="flex justify-between p-4 font-dm-sans">
 						<div className='flex flex-col'>
 							<h2 className='font-normal text-[#17384D]'>PART {part.id}</h2>
 							<h2 className="text-lg font-semibold">{part.title}</h2>

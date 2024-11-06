@@ -2,6 +2,13 @@ export interface Chapter {
 	id: number;
 	title: string;
 	duration: string;
+	parts: []
+}
+
+export interface Part {
+	id: number;
+	title: string;
+	duration: string;
 	difficulty: string;
 	completed: number;
 	resources: Resource[];

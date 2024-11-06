@@ -1,203 +1,234 @@
 [
 	{
 		"id": 1,
-		"title": "Lorem Ipsum Dolor Sit Amet",
-		"duration": "02:00:00",
-		"difficulty": "Medium",
-		"completed": 45,
-		"resources": [
+		"title": "Chapter 1",
+		"duration": "05:00:00",
+		"parts": [
 			{
 				"id": 1,
-				"type": "Video",
-				"title": "Video 1",
-				"duration": "10:00"
+				"title": "Lorem Ipsum Dolor Sit Amet",
+				"duration": "02:00:00",
+				"difficulty": "Medium",
+				"completed": 45,
+				"resources": [
+					{
+						"id": 1,
+						"type": "Video",
+						"title": "Video 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 2,
+						"type": "Article",
+						"title": "Article 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 3,
+						"type": "Quiz",
+						"title": "Quiz 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 4,
+						"type": "Exercise",
+						"title": "Coding Exercise 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 5,
+						"type": "Resource",
+						"title": "Combined Resource 1",
+						"duration": "10:00"
+					}
+				]
 			},
 			{
 				"id": 2,
-				"type": "Article",
-				"title": "Article 1",
-				"duration": "10:00"
+				"title": "Lorem Ipsum Dolor Sit Amet",
+				"duration": "02:00:00",
+				"difficulty": "Medium",
+				"completed": 20,
+				"resources": [
+					{
+						"id": 1,
+						"type": "Video",
+						"title": "Video 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 2,
+						"type": "Article",
+						"title": "Article 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 3,
+						"type": "Quiz",
+						"title": "Quiz 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 4,
+						"type": "Exercise",
+						"title": "Coding Exercise 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 5,
+						"type": "Resource",
+						"title": "Combined Resource 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 6,
+						"type": "Video",
+						"title": "Video 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 7,
+						"type": "Article",
+						"title": "Article 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 8,
+						"type": "Quiz",
+						"title": "Quiz 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 9,
+						"type": "Exercise",
+						"title": "Coding Exercise 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 10,
+						"type": "Resource",
+						"title": "Combined Resource 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 11,
+						"type": "Resource",
+						"title": "Combined Resource 3",
+						"duration": "10:00"
+					},
+					{
+						"id": 12,
+						"type": "Resource",
+						"title": "Combined Resource 4",
+						"duration": "10:00"
+					}
+				]
 			},
 			{
 				"id": 3,
-				"type": "Quiz",
-				"title": "Quiz 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 4,
-				"type": "Exercise",
-				"title": "Coding Exercise 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 5,
-				"type": "Resource",
-				"title": "Combined Resource 1",
-				"duration": "10:00"
+				"title": "Lorem Ipsum Dolor Sit Amet",
+				"duration": "02:00:00",
+				"difficulty": "Medium",
+				"completed": 0,
+				"resources": [
+					{
+						"id": 1,
+						"type": "Video",
+						"title": "Video 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 2,
+						"type": "Article",
+						"title": "Article 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 3,
+						"type": "Quiz",
+						"title": "Quiz 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 4,
+						"type": "Exercise",
+						"title": "Coding Exercise 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 5,
+						"type": "Resource",
+						"title": "Combined Resource 1",
+						"duration": "10:00"
+					},
+					{
+						"id": 6,
+						"type": "Video",
+						"title": "Video 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 7,
+						"type": "Article",
+						"title": "Article 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 8,
+						"type": "Quiz",
+						"title": "Quiz 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 9,
+						"type": "Exercise",
+						"title": "Coding Exercise 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 10,
+						"type": "Resource",
+						"title": "Combined Resource 2",
+						"duration": "10:00"
+					},
+					{
+						"id": 11,
+						"type": "Resource",
+						"title": "Combined Resource 3",
+						"duration": "10:00"
+					},
+					{
+						"id": 12,
+						"type": "Resource",
+						"title": "Combined Resource 4",
+						"duration": "10:00"
+					}
+				]
 			}
 		]
 	},
 	{
 		"id": 2,
-		"title": "Lorem Ipsum Dolor Sit Amet",
-		"duration": "02:00:00",
-		"difficulty": "Medium",
-		"completed": 20,
-		"resources": [
-			{
-				"id": 1,
-				"type": "Video",
-				"title": "Video 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 2,
-				"type": "Article",
-				"title": "Article 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 3,
-				"type": "Quiz",
-				"title": "Quiz 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 4,
-				"type": "Exercise",
-				"title": "Coding Exercise 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 5,
-				"type": "Resource",
-				"title": "Combined Resource 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 6,
-				"type": "Video",
-				"title": "Video 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 7,
-				"type": "Article",
-				"title": "Article 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 8,
-				"type": "Quiz",
-				"title": "Quiz 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 9,
-				"type": "Exercise",
-				"title": "Coding Exercise 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 10,
-				"type": "Resource",
-				"title": "Combined Resource 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 11,
-				"type": "Resource",
-				"title": "Combined Resource 3",
-				"duration": "10:00"
-			},
-			{
-				"id": 12,
-				"type": "Resource",
-				"title": "Combined Resource 4",
-				"duration": "10:00"
-			}
-		]
+		"title": "Chapter 2",
+		"duration": "",
+		"parts": []
 	},
 	{
 		"id": 3,
-		"title": "Lorem Ipsum Dolor Sit Amet",
-		"duration": "02:00:00",
-		"difficulty": "Medium",
-		"completed": 0,
-		"resources": [
-			{
-				"id": 1,
-				"type": "Video",
-				"title": "Video 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 2,
-				"type": "Article",
-				"title": "Article 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 3,
-				"type": "Quiz",
-				"title": "Quiz 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 4,
-				"type": "Exercise",
-				"title": "Coding Exercise 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 5,
-				"type": "Resource",
-				"title": "Combined Resource 1",
-				"duration": "10:00"
-			},
-			{
-				"id": 6,
-				"type": "Video",
-				"title": "Video 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 7,
-				"type": "Article",
-				"title": "Article 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 8,
-				"type": "Quiz",
-				"title": "Quiz 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 9,
-				"type": "Exercise",
-				"title": "Coding Exercise 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 10,
-				"type": "Resource",
-				"title": "Combined Resource 2",
-				"duration": "10:00"
-			},
-			{
-				"id": 11,
-				"type": "Resource",
-				"title": "Combined Resource 3",
-				"duration": "10:00"
-			},
-			{
-				"id": 12,
-				"type": "Resource",
-				"title": "Combined Resource 4",
-				"duration": "10:00"
-			}
-		]
+		"title": "Chapter 3",
+		"duration": "",
+		"parts": []
+	},
+	{
+		"id": 4,
+		"title": "Chapter 4",
+		"duration": "",
+		"parts": []
+	},
+	{
+		"id": 5,
+		"title": "Chapter 5",
+		"duration": "",
+		"parts": []
 	}
 ]

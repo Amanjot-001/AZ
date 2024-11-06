@@ -9,7 +9,7 @@ const ChapterList: React.FC<ChapterListProps> = ({ chapters, selectedChapter, on
 				<React.Fragment key={chapter.id}>
 					<div
 						onClick={() => onSelectChapter(chapter)}
-						className={`flex justify-between items-center px-2 py-3 cursor-pointer rounded-md ${selectedChapter?.id === chapter.id ? 'bg-[#EFF5FF] font-medium' : ''
+						className={`flex justify-between items-center font-dm-sans px-2 py-3 cursor-pointer rounded-md ${selectedChapter?.id === chapter.id ? 'bg-[#EFF5FF] font-bold' : ''
 							}`}
 					>
 						{chapter.title}

@@ -13,6 +13,9 @@ export default {
 			colors: {
 				secondary_bg: "#FFFFFF",
 			},
+			fontFamily: {
+				'dm-sans': ['"DM Sans"', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],

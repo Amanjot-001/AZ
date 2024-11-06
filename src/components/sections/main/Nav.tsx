@@ -12,13 +12,13 @@ const Nav: React.FC = () => {
 						className={`flex items-center space-x-2 cursor-pointer px-3 py-2 rounded-lg ${item.isActive ? "bg-white shadow-[0px_3.67px_3.67px_rgba(41,83,155,0.3)] border border-[#A4E6FF] box-border" : ""}`}
 					>
 						<img src={item.logo} alt={`${item.name} icon`} className="w-5 h-5 text-black" />
-						<span className={`text-lg leading-10 text-black ${item.isActive ? "font-medium" : "font-normal"}`}>{item.name}</span>
+						<span className={`text-lg leading-10 font-dm-sans text-black ${item.isActive ? "font-bold" : "font-normal"}`}>{item.name}</span>
 					</div>
 				))}
 			</div>
 			<div className="flex items-center space-x-2 cursor-pointer my-2 px-3 py-2 rounded-lg border border-[#99E4FF]">
 				<img src={InfoIcon} alt="info" className="w-5 h-5" />
-				<span className="text-lg font-medium leading-10 text-[#172B4D]">How it works</span>
+				<span className="text-lg font-bold leading-10 font-dm-sans text-[#172B4D]">How it works</span>
 			</div>
 		</div>
 	);

@@ -16,10 +16,10 @@ const ResourceList: React.FC<ResourceListProps> = ({ resources }) => {
 
 				return (
 					<React.Fragment key={resource.id}>
-						<div className="flex justify-between items-center p-6">
+						<div className="flex justify-between items-center font-dm-sans p-6">
 							<span className='flex items-center gap-2'>
 								<img src={IconComponent} alt="icon" className='w-5 h-5 text-[linear-gradient(90deg, #3467AE 7.81%, #0C4969 89.84%)] fill-current' />
-								<p className='font-medium text-black'>{resource.title}</p>
+								<p className='font-bold text-black'>{resource.title}</p>
 							</span>
 							<span className="flex items-center gap-2">
 								<img src={ClockIcon} alt="icon" className='w-5 h-5 text-[#17384D] fill-[#17384D]' />

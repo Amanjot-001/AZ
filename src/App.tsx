@@ -1,5 +1,5 @@
-import { Header, Sidebar, MainContent } from "./components/sections";
-import { Route, Routes } from "react-router-dom";
+import { Header, Sidebar } from "./components/sections";
+import AppRoutes from './routes';
 
 function App() {
 	return (
@@ -9,9 +9,7 @@ function App() {
 			<div className="flex justify-center gap-8">
 				<Sidebar />
 				<main className="p-8 mt-8 w-full bg-secondary_bg rounded-xl border border-[#A4E6FF]">
-					<Routes>
-						<Route path="/" element={<MainContent />} />
-					</Routes>
+					<AppRoutes />
 				</main>
 			</div>
 		</div>

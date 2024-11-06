@@ -18,7 +18,7 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/frontend-assignment.git
+   git clone git@github.com:Amanjot-001/AZ-task.git
    ```
 
 2. **Navigate to the Project Directory**
@@ -41,7 +41,7 @@
 The application will be available at http://localhost:5173.
 
 ## Hosted Link
-You can view the live demo of the project [here]().
+You can view the live demo of the project [here](https://amanjot-singh-az-hiring-task.netlify.app/).
 
 ## Demo Video
 A demo video showcasing the features of the project can be found [here]()

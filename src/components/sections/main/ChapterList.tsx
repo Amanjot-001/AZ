@@ -10,7 +10,7 @@ interface ChapterListProps {
 
 const ChapterList: React.FC<ChapterListProps> = ({ chapters, selectedChapter, onSelectChapter }) => {
 	return (
-		<div className="flex flex-col w-1/5">
+		<div className="flex flex-col w-1/4">
 			{chapters.map((chapter) => (
 				<React.Fragment key={chapter.id}>
 					<div

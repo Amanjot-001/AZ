@@ -12,7 +12,9 @@ const Sidebar: React.FC = () => {
                     transition`}
 				>
 					<img src={item.logo} alt={item.name} className="w-5 h-5" />
-					<span className="text-lg font-normal leading-10 text-[#172B4D] ml-5">{item.name}</span>
+					<span className={`text-lg leading-10 text-[#172B4D] ml-5 ${item.isActive ? "font-medium" : "font-normal"}`}>
+						{item.name}
+					</span>
 				</div>
 			))}
 		</div>

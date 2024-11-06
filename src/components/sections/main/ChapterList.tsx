@@ -13,10 +13,12 @@ const ChapterList: React.FC<ChapterListProps> = ({ chapters, selectedChapter, on
 							}`}
 					>
 						{chapter.title}
-						<span className="flex items-center gap-2 text-sm text-[#608AD2]">
-							<img src={ClockIcon} alt="time" className="w-4 h-4 text-[#608AD2] stroke-[#608AD2]" />
-							{chapter.duration}
-						</span>
+						{chapter.duration &&
+							<span className="flex items-center gap-2 text-sm text-[#608AD2]">
+								<img src={ClockIcon} alt="time" className="w-4 h-4 text-[#608AD2] stroke-[#608AD2]" />
+								{chapter.duration}
+							</span>
+						}
 					</div>
 					<div className="h-px bg-gradient-to-r from-white via-primary_border to-white"></div>
 				</React.Fragment>

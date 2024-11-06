@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ResourceList from './ResourceList.tsx';
-import ClockIcon from '../../../assets/chapters-icons/clock.svg'
-import { ContestIcon } from '../../../assets/sidebar-icons/index.ts';
-import { ArrowDownIcon, ArrowUpIcon } from '../../../assets/chapters-icons/index.ts';
+import { ArrowDownIcon, ArrowUpIcon, ClockIcon, CopyIcon, ContestIcon } from '../../../assets/chapters-icons/index.ts';
 import { fetchChapters } from '../../../services/chapterService.ts';
 import { Chapter } from './types.ts';
 
@@ -43,7 +41,7 @@ const ContentDetails: React.FC = () => {
 								{part.difficulty}
 							</span>
 							<span className="flex items-center gap-2 text-sm text-[#17384D]">
-								<img src={ContestIcon} alt="time" className="w-4 h-4 text-[#17384D] fill-current" />
+								<img src={CopyIcon} alt="time" className="w-4 h-4 text-[#17384D] fill-current" />
 								{part.resources.length}
 							</span>
 							<span onClick={() => togglePart(part.id)} className="cursor-pointer">

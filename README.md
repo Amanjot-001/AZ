@@ -46,7 +46,7 @@ The application will be available at http://localhost:5173.
 You can view the live demo of the project [here](https://amanjot-singh-az-hiring-task.netlify.app/).
 
 ## Demo Video
-A demo video showcasing the features of the project can be found [here]()
+A demo video showcasing the features of the project can be found [here](https://youtu.be/E3zod7EesPQ)
 
 ## Conclusion
 This project is a demonstration of my skills in React, TypeScript, and CSS. It highlights my ability to build clean, functional, and maintainable user interfaces with modern tools. Thank you for reviewing my submission!
